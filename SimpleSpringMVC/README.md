@@ -40,7 +40,10 @@ http://localhost:8080/SimpleSpringMVC/user
 
 ----------------
 
+JSTL Example
+http://localhost:8080/SimpleSpringMVC/carlist
 
+----------------
 
 
 

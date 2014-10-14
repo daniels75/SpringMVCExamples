@@ -1,0 +1,167 @@
+
+c:\daniels\training\SpringMVC\SpringAppFuseMVC>set MAVEN_OPTS=-Xms256m -Xmx1024m 
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.daniels.examples:SpringAppFuseMVC:war:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.eclipse.jetty:jetty-maven-plugin is missing. @ line 154, column 24
+[WARNING] 'dependencies.dependency.exclusions.exclusion.artifactId' for org.springmodules:spring-modules-validation:jar with value '*' does not match a valid id pattern. @ line 347, column 33
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building AppFuse Spring MVC Application 1.0-SNAPSHOT
+[INFO] ---------------------------j---------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.1:tree (default-cli) @ SpringAppFuseMVC ---
+[INFO] org.daniels.examples:SpringAppFuseMVC:war:1.0-SNAPSHOT
+[INFO] +- org.appfuse:appfuse-web:pom:3.0.0:compile
+[INFO] |  +- org.appfuse:appfuse-service:jar:3.0.0:compile
+[INFO] |  |  +- javax.mail:mail:jar:1.4:compile
+[INFO] |  |  |  \- javax.activation:activation:jar:1.1:compile
+[INFO] |  |  +- org.apache.velocity:velocity:jar:1.7:compile
+[INFO] |  |  +- org.apache.cxf:cxf-rt-frontend-jaxrs:jar:2.7.7:compile
+[INFO] |  |  |  +- org.apache.cxf:cxf-api:jar:2.7.7:compile
+[INFO] |  |  |  |  +- org.codehaus.woodstox:woodstox-core-asl:jar:4.2.0:compile
+[INFO] |  |  |  |  |  \- org.codehaus.woodstox:stax2-api:jar:3.1.1:compile
+[INFO] |  |  |  |  +- org.apache.ws.xmlschema:xmlschema-core:jar:2.0.3:compile
+[INFO] |  |  |  |  +- org.apache.geronimo.specs:geronimo-javamail_1.4_spec:jar:1.7.1:compile
+[INFO] |  |  |  |  \- wsdl4j:wsdl4j:jar:1.6.3:compile
+[INFO] |  |  |  +- org.apache.cxf:cxf-rt-core:jar:2.7.7:compile
+[INFO] |  |  |  |  \- com.sun.xml.bind:jaxb-impl:jar:2.2.6:compile
+[INFO] |  |  |  +- javax.ws.rs:javax.ws.rs-api:jar:2.0-m10:compile
+[INFO] |  |  |  \- org.apache.cxf:cxf-rt-bindings-xml:jar:2.7.7:compile
+[INFO] |  |  +- org.apache.cxf:cxf-rt-transports-http:jar:2.7.7:compile
+[INFO] |  |  +- org.apache.cxf:cxf-rt-frontend-jaxws:jar:2.7.7:compile
+[INFO] |  |  |  +- xml-resolver:xml-resolver:jar:1.2:compile
+[INFO] |  |  |  +- asm:asm:jar:3.3.1:compile
+[INFO] |  |  |  +- org.apache.cxf:cxf-rt-bindings-soap:jar:2.7.7:compile
+[INFO] |  |  |  |  \- org.apache.cxf:cxf-rt-databinding-jaxb:jar:2.7.7:compile
+[INFO] |  |  |  +- org.apache.cxf:cxf-rt-frontend-simple:jar:2.7.7:compile
+[INFO] |  |  |  \- org.apache.cxf:cxf-rt-ws-addr:jar:2.7.7:compile
+[INFO] |  |  |     \- org.apache.cxf:cxf-rt-ws-policy:jar:2.7.7:compile
+[INFO] |  |  |        \- org.apache.neethi:neethi:jar:3.0.2:compile
+[INFO] |  |  +- org.codehaus.jackson:jackson-jaxrs:jar:1.9.11:compile
+[INFO] |  |  |  +- org.codehaus.jackson:jackson-core-asl:jar:1.9.11:compile
+[INFO] |  |  |  \- org.codehaus.jackson:jackson-mapper-asl:jar:1.9.11:compile
+[INFO] |  |  +- org.springframework:spring-aspects:jar:4.0.4.RELEASE:compile (version managed from 4.0.0.RELEASE)
+[INFO] |  |  \- org.springframework:spring-context-support:jar:4.0.4.RELEASE:compile (version managed from 4.0.0.RELEASE)
+[INFO] |  +- commons-dbcp:commons-dbcp:jar:1.4:compile
+[INFO] |  |  \- commons-pool:commons-pool:jar:1.5.4:compile
+[INFO] |  +- org.directwebremoting:dwr:jar:2.0.10:compile
+[INFO] |  +- net.sf.ehcache:ehcache-web:jar:2.0.4:compile
+[INFO] |  +- net.sf.ehcache:ehcache-core:jar:2.6.6:compile
+[INFO] |  +- javax.servlet:jstl:jar:1.2:compile
+[INFO] |  +- struts-menu:struts-menu:jar:2.4.3:runtime
+[INFO] |  |  +- velocity:velocity:jar:1.4:runtime
+[INFO] |  |  |  \- velocity:velocity-dep:jar:1.4:runtime
+[INFO] |  |  \- velocity-tools:velocity-tools-view:jar:1.0:runtime
+[INFO] |  +- org.apache.velocity:velocity-tools:jar:2.0:runtime
+[INFO] |  |  +- commons-chain:commons-chain:jar:1.1:runtime
+[INFO] |  |  +- sslext:sslext:jar:1.2-0:runtime
+[INFO] |  |  +- org.apache.struts:struts-core:jar:1.3.8:runtime
+[INFO] |  |  +- org.apache.struts:struts-taglib:jar:1.3.8:runtime
+[INFO] |  |  \- org.apache.struts:struts-tiles:jar:1.3.8:runtime
+[INFO] |  +- opensymphony:sitemesh:jar:2.4.2:runtime
+[INFO] |  +- org.springframework:spring-aop:jar:4.0.4.RELEASE:compile
+[INFO] |  |  +- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  |  +- org.springframework:spring-beans:jar:4.0.4.RELEASE:compile (version managed from 3.2.6.RELEASE)
+[INFO] |  |  \- org.springframework:spring-core:jar:4.0.4.RELEASE:compile
+[INFO] |  +- org.springframework.security:spring-security-taglibs:jar:3.2.0.RELEASE:compile
+[INFO] |  |  +- org.springframework.security:spring-security-acl:jar:3.2.0.RELEASE:compile
+[INFO] |  |  \- org.springframework.security:spring-security-web:jar:3.2.0.RELEASE:compile
+[INFO] |  +- org.springframework:spring-webmvc:jar:4.0.4.RELEASE:compile (version managed from 4.0.0.RELEASE)
+[INFO] |  |  +- org.springframework:spring-expression:jar:4.0.4.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-web:jar:4.0.4.RELEASE:compile
+[INFO] |  +- org.tuckey:urlrewritefilter:jar:3.1.0:compile
+[INFO] |  +- ro.isdc.wro4j:wro4j-core:jar:1.7.2:compile
+[INFO] |  |  \- org.apache.commons:commons-lang3:jar:3.1:compile
+[INFO] |  +- org.webjars:jquery-cookie:jar:1.3.1:compile
+[INFO] |  +- org.webjars:bootswatch:jar:3.0.0:compile
+[INFO] |  +- commons-lang:commons-lang:jar:2.6:compile
+[INFO] |  +- org.springframework.security:spring-security-core:jar:3.2.0.RELEASE:compile
+[INFO] |  +- org.springframework.security:spring-security-config:jar:3.2.0.RELEASE:compile
+[INFO] |  +- org.springframework.security:spring-security-ldap:jar:3.2.0.RELEASE:compile
+[INFO] |  |  +- org.springframework.ldap:spring-ldap-core:jar:1.3.2.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-tx:jar:4.0.4.RELEASE:compile (version managed from 3.2.6.RELEASE)
+[INFO] |  +- org.aspectj:aspectjweaver:jar:1.7.4:compile
+[INFO] |  +- org.aspectj:aspectjrt:jar:1.7.4:compile
+[INFO] |  +- org.slf4j:slf4j-api:jar:1.7.5:compile
+[INFO] |  +- org.slf4j:jcl-over-slf4j:jar:1.7.5:compile
+[INFO] |  +- org.slf4j:slf4j-log4j12:jar:1.7.5:compile
+[INFO] |  \- log4j:log4j:jar:1.2.17:compile
+[INFO] +- org.appfuse:appfuse-hibernate:jar:3.0.0:compile
+[INFO] |  +- org.appfuse:appfuse-data-common:jar:3.0.0:compile
+[INFO] |  |  +- org.hibernate.java-persistence:jpa-api:jar:2.0-cr-1:compile
+[INFO] |  |  +- javax.xml.bind:jaxb-api:jar:2.2.11:compile
+[INFO] |  |  +- org.hibernate:hibernate-search:jar:4.1.1.Final:compile
+[INFO] |  |  |  \- org.hibernate:hibernate-search-orm:jar:4.1.1.Final:compile
+[INFO] |  |  |     \- org.hibernate:hibernate-search-engine:jar:4.1.1.Final:compile
+[INFO] |  |  |        \- org.apache.avro:avro:jar:1.5.1:compile
+[INFO] |  |  |           +- com.thoughtworks.paranamer:paranamer:jar:2.3:compile
+[INFO] |  |  |           \- org.xerial.snappy:snappy-java:jar:1.0.1-rc3:compile
+[INFO] |  |  \- org.hibernate:hibernate-search-analyzers:jar:4.1.1.Final:compile
+[INFO] |  |     +- org.apache.lucene:lucene-core:jar:3.5.0:compile
+[INFO] |  |     +- org.apache.lucene:lucene-analyzers:jar:3.5.0:compile
+[INFO] |  |     \- org.apache.solr:solr-analysis-extras:jar:3.5.0:compile
+[INFO] |  |        +- org.apache.solr:solr-core:jar:3.5.0:compile
+[INFO] |  |        |  +- org.apache.solr:solr-solrj:jar:3.5.0:compile
+[INFO] |  |        |  +- org.apache.lucene:lucene-highlighter:jar:3.5.0:compile
+[INFO] |  |        |  +- org.apache.lucene:lucene-memory:jar:3.5.0:compile
+[INFO] |  |        |  +- org.apache.lucene:lucene-misc:jar:3.5.0:compile
+[INFO] |  |        |  +- org.apache.lucene:lucene-spatial:jar:3.5.0:compile
+[INFO] |  |        |  +- org.apache.lucene:lucene-spellchecker:jar:3.5.0:compile
+[INFO] |  |        |  +- org.apache.lucene:lucene-grouping:jar:3.5.0:compile
+[INFO] |  |        |  +- org.apache.solr:solr-commons-csv:jar:3.5.0:compile
+[INFO] |  |        |  +- commons-codec:commons-codec:jar:1.5:compile
+[INFO] |  |        |  \- com.google.guava:guava:jar:r05:compile
+[INFO] |  |        +- org.apache.lucene:lucene-smartcn:jar:3.5.0:compile
+[INFO] |  |        \- org.apache.lucene:lucene-stempel:jar:3.5.0:compile
+[INFO] |  +- org.hibernate:hibernate-core:jar:4.2.7.Final:compile
+[INFO] |  |  +- org.jboss.logging:jboss-logging:jar:3.1.0.GA:compile
+[INFO] |  |  +- dom4j:dom4j:jar:1.6.1:compile
+[INFO] |  |  +- org.javassist:javassist:jar:3.18.1-GA:compile
+[INFO] |  |  +- org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:jar:1.0.1.Final:compile
+[INFO] |  |  +- org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final:compile
+[INFO] |  |  \- org.hibernate.common:hibernate-commons-annotations:jar:4.0.2.Final:compile
+[INFO] |  +- javassist:javassist:jar:3.12.1.GA:compile
+[INFO] |  +- org.hibernate:hibernate-ehcache:jar:4.2.7.Final:compile
+[INFO] |  +- commons-beanutils:commons-beanutils:jar:1.8.3:compile
+[INFO] |  +- org.springframework:spring-context:jar:4.0.4.RELEASE:compile
+[INFO] |  +- org.springframework:spring-jdbc:jar:4.0.4.RELEASE:compile
+[INFO] |  \- org.springframework:spring-orm:jar:4.0.4.RELEASE:compile
+[INFO] +- mysql:mysql-connector-java:jar:5.1.27:compile
+[INFO] +- commons-fileupload:commons-fileupload:jar:1.3:compile
+[INFO] +- commons-io:commons-io:jar:2.4:compile
+[INFO] +- displaytag:displaytag:jar:1.2:compile
+[INFO] |  +- commons-collections:commons-collections:jar:3.1:compile
+[INFO] |  \- com.lowagie:itext:jar:1.3:compile
+[INFO] +- javax.servlet.jsp:jsp-api:jar:2.1:provided
+[INFO] +- javax.servlet:javax.servlet-api:jar:3.1.0:provided
+[INFO] +- org.springmodules:spring-modules-validation:jar:0.8:compile
+[INFO] |  +- commons-logging:commons-logging:jar:1.0.4:compile
+[INFO] |  +- commons-validator:commons-validator:jar:1.3.0:compile
+[INFO] |  |  \- oro:oro:jar:2.0.8:compile
+[INFO] |  +- commons-digester:commons-digester:jar:1.7:compile
+[INFO] |  +- antlr:antlr:jar:2.7.6:compile
+[INFO] |  +- org.springframework:spring:jar:2.0.3:compile
+[INFO] |  \- rhino:js:jar:1.6R2:compile
+[INFO] +- org.mockito:mockito-core:jar:1.9.5:test (scope not updated to compile)
+[INFO] |  +- org.hamcrest:hamcrest-core:jar:1.1:test
+[INFO] |  \- org.objenesis:objenesis:jar:1.0:test
+[INFO] +- junit:junit:jar:4.11:test
+[INFO] +- org.springframework:spring-test:jar:4.0.4.RELEASE:test
+[INFO] +- org.subethamail:subethasmtp-wiser:jar:1.2:test
+[INFO] |  \- org.subethamail:subethasmtp-smtp:jar:1.2:test
+[INFO] +- org.webjars:bootstrap:jar:3.0.2:compile
+[INFO] |  \- org.webjars:jquery:jar:1.9.0:compile
+[INFO] \- org.webjars:bootstrap-datepicker:jar:1.2.0:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.015s
+[INFO] Finished at: Tue Oct 14 20:29:22 CEST 2014
+[INFO] Final Memory: 18M/439M
+[INFO] ------------------------------------------------------------------------
