@@ -1,6 +1,10 @@
 1. Run Tomcat
 2. In you browser type: http://localhost:8080/SimpleSpringMVC/welcome
 
+
+Some explanations:
+http://stackoverflow.com/questions/6791072/command-modelname-magic-value-in-spring-mvc-3
+
 -----------------
 
 GET Example

@@ -48,7 +48,7 @@
 	<build>
 		<finalName>SpringMVC</finalName>
 		<plugins>
-		<!-- 
+	
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-eclipse-plugin</artifactId>
@@ -60,7 +60,6 @@
 				</configuration>
 			</plugin>		
 			
-			 -->
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.3.2</version>
